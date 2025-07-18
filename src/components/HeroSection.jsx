@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Download, Code, Terminal, Braces } from 'lucide-react';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
+import HeroAnimation from './HeroAnimation';
 
 const HeroSection = () => {
   return (
@@ -58,20 +59,8 @@ const HeroSection = () => {
           </div>
           
           {/* Right Side - Animation */}
-          <div className="flex justify-center">
-            <div className="hero-animation">
-              {/* Floating Code Elements */}
-              <div className="floating-code">const dev = () =&gt; &#123;</div>
-              <div className="floating-code">return "awesome";</div>
-              <div className="floating-code">&#125;</div>
-              <div className="floating-code">npm run build</div>
-              <div className="floating-code">git commit -m "feat"</div>
-              
-              {/* Central Circle */}
-              <div className="code-circle">
-                <Code size={48} className="text-cyan" />
-              </div>
-            </div>
+          <div className="flex justify-center items-center">
+            <HeroAnimation />
           </div>
         </div>
       </div>
