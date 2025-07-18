@@ -45,12 +45,12 @@ const ProjectsSection = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-4 flex gap-4">
-                    <a href={project.github} className="text-white hover:text-cyan-400 transition-colors">
+                    <a href={project.github} className="text-white hover:text-cyan transition-colors">
                       <Github size={24} />
                     </a>
-                    <a href={project.live} className="text-white hover:text-cyan-400 transition-colors">
+                    <a href={project.live} className="text-white hover:text-cyan transition-colors">
                       <ExternalLink size={24} />
                     </a>
                   </div>
@@ -58,13 +58,13 @@ const ProjectsSection = () => {
               </div>
               
               <h3 className="text-xl font-semibold mb-3 text-white">{project.title}</h3>
-              <p className="text-gray-300 mb-4">{project.description}</p>
+              <p className="text-gray mb-4">{project.description}</p>
               
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-2 py-1 bg-gradient-to-r from-cyan-400/20 to-pink-400/20 border border-cyan-400/30 rounded text-xs text-cyan-300"
+                    className="px-2 py-1 bg-black border border-cyan rounded text-xs text-cyan"
                   >
                     {tech}
                   </span>

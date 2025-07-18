@@ -24,11 +24,11 @@ body {
 }
 
 .text-cyan {
-  color: #00ffff;
+  color: #00ffff !important;
 }
 
 .text-gray {
-  color: #666666;
+  color: #666666 !important;
 }
 
 .text-white {
@@ -114,7 +114,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: #00cccc;
+  background: #00ffff;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
 }
@@ -126,8 +126,9 @@ body {
 }
 
 .btn-outline:hover {
-  background: #00ffff;
-  color: #000000;
+  background: transparent;
+  color: #00ffff;
+  border-color: #00ffff;
   transform: translateY(-1px);
 }
 
@@ -232,7 +233,7 @@ body {
 
 /* Border */
 .border { border: 1px solid #333333; }
-.border-cyan { border-color: #00ffff; }
+.border-cyan { border-color: #00ffff !important; }
 .rounded { border-radius: 8px; }
 .rounded-lg { border-radius: 12px; }
 .rounded-full { border-radius: 9999px; }
@@ -353,6 +354,15 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #00cccc;
+}
+
+/* Tech Cards */
+.tech-card {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .tech-card:hover {

@@ -11,7 +11,7 @@ const ContactSection = () => {
         
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-gray">
               I'm always open to discussing new opportunities, interesting projects, 
               and potential collaborations. Let's create something amazing together!
             </p>
@@ -22,9 +22,9 @@ const ContactSection = () => {
               href="mailto:your.email@domain.com"
               className="tech-card text-center block"
             >
-              <Mail size={48} className="mx-auto mb-4 text-cyan-400" />
+              <Mail size={48} className="mx-auto mb-4 text-cyan" />
               <h3 className="text-xl font-semibold mb-2 text-white">Email</h3>
-              <p className="text-gray-300">your.email@domain.com</p>
+              <p className="text-gray">your.email@domain.com</p>
             </a>
             
             <a
@@ -33,9 +33,9 @@ const ContactSection = () => {
               rel="noopener noreferrer"
               className="tech-card text-center block"
             >
-              <Linkedin size={48} className="mx-auto mb-4 text-cyan-400" />
+              <Linkedin size={48} className="mx-auto mb-4 text-cyan" />
               <h3 className="text-xl font-semibold mb-2 text-white">LinkedIn</h3>
-              <p className="text-gray-300">Connect with me</p>
+              <p className="text-gray">Connect with me</p>
             </a>
             
             <a
@@ -44,9 +44,9 @@ const ContactSection = () => {
               rel="noopener noreferrer"
               className="tech-card text-center block"
             >
-              <Github size={48} className="mx-auto mb-4 text-cyan-400" />
+              <Github size={48} className="mx-auto mb-4 text-cyan" />
               <h3 className="text-xl font-semibold mb-2 text-white">GitHub</h3>
-              <p className="text-gray-300">Check out my work</p>
+              <p className="text-gray">Check out my work</p>
             </a>
           </div>
         </div>
