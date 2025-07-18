@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
-import HeroAnimation from './HeroAnimation';
+import TechieAnimation from './TechieAnimation';
 
 const HeroSection = () => {
   return (
@@ -60,7 +60,7 @@ const HeroSection = () => {
           
           {/* Right Side - Animation */}
           <div className="flex justify-center items-center">
-            <HeroAnimation />
+            <TechieAnimation />
           </div>
         </div>
       </div>
