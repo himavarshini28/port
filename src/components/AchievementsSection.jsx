@@ -36,12 +36,12 @@ const AchievementsSection = () => {
           {achievements.map((achievement, index) => (
             <div key={index} className="tech-card">
               <div className="flex items-start gap-4">
-                <div className="text-cyan mt-1">
+                <div className="text-white mt-1">
                   <Trophy size={24} />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">{achievement.title}</h3>
-                  <h4 className="text-cyan font-medium mb-3">{achievement.organization}</h4>
+                  <h4 className="text-gray font-medium mb-3">{achievement.organization}</h4>
                   <p className="text-gray">{achievement.description}</p>
                 </div>
               </div>

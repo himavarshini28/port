@@ -22,7 +22,7 @@ const ContactSection = () => {
               href="mailto:your.email@domain.com"
               className="tech-card text-center block"
             >
-              <Mail size={48} className="mx-auto mb-4 text-cyan" />
+              <Mail size={48} className="mx-auto mb-4 text-white" />
               <h3 className="text-xl font-semibold mb-2 text-white">Email</h3>
               <p className="text-gray">your.email@domain.com</p>
             </a>
@@ -33,7 +33,7 @@ const ContactSection = () => {
               rel="noopener noreferrer"
               className="tech-card text-center block"
             >
-              <Linkedin size={48} className="mx-auto mb-4 text-cyan" />
+              <Linkedin size={48} className="mx-auto mb-4 text-white" />
               <h3 className="text-xl font-semibold mb-2 text-white">LinkedIn</h3>
               <p className="text-gray">Connect with me</p>
             </a>
@@ -44,7 +44,7 @@ const ContactSection = () => {
               rel="noopener noreferrer"
               className="tech-card text-center block"
             >
-              <Github size={48} className="mx-auto mb-4 text-cyan" />
+              <Github size={48} className="mx-auto mb-4 text-white" />
               <h3 className="text-xl font-semibold mb-2 text-white">GitHub</h3>
               <p className="text-gray">Check out my work</p>
             </a>

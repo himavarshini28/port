@@ -50,11 +50,11 @@ const CodingProfilesSection = () => {
               className="tech-card block"
             >
               <div className="flex items-center gap-6">
-                <div className="text-cyan">{profile.icon}</div>
+                <div className="text-white">{profile.icon}</div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-1">{profile.platform}</h3>
                   <p className="text-gray mb-2">@{profile.username}</p>
-                  <p className="text-cyan font-medium">{profile.stats}</p>
+                  <p className="text-gray font-medium">{profile.stats}</p>
                 </div>
                 <div className="ml-auto">
                   <ExternalLink size={20} className="text-gray" />
