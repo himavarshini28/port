@@ -27,13 +27,11 @@ const HeroSection = () => {
               <a href="#contact" className="btn btn-primary">
                 Get In Touch
               </a>
-              {/* Resume button - to be updated with new file */}
-              {/* 
-              <a href="/resume.pdf" className="btn btn-outline">
+              {/* Resume button */}
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
                 <Download size={18} />
                 Resume
               </a>
-              */}
             </div>
             
             <div className="flex gap-6 mt-8">
