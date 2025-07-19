@@ -24,11 +24,15 @@ body {
 }
 
 .text-cyan {
-  color: #00ffff;
+  color: #00ffff !important;
 }
 
 .text-gray {
-  color: #888888;
+  color: #666666 !important;
+}
+
+.text-white {
+  color: #ffffff;
 }
 
 /* Layout Components */
@@ -49,18 +53,19 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.98);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid #222222;
+  border-bottom: 1px solid #111111;
   padding: 1rem 0;
 }
 
 .nav-link {
-  color: #888888;
+  color: #666666;
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: color 0.3s ease;
   position: relative;
+  font-size: 0.9rem;
 }
 
 .nav-link:hover {
@@ -73,7 +78,7 @@ body {
   bottom: 0;
   left: 50%;
   width: 0;
-  height: 2px;
+  height: 1px;
   background: #00ffff;
   transition: all 0.3s ease;
   transform: translateX(-50%);
@@ -87,14 +92,19 @@ body {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 0.875rem 1.75rem;
   font-weight: 500;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   cursor: pointer;
   border: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 1;
 }
 
 .btn-primary {
@@ -104,34 +114,37 @@ body {
 }
 
 .btn-primary:hover {
-  background: #00e6e6;
-  transform: translateY(-2px);
+  background: #00ffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
 }
 
 .btn-outline {
   background: transparent;
   color: #00ffff;
-  border: 2px solid #00ffff;
+  border: 1.5px solid #00ffff;
 }
 
 .btn-outline:hover {
-  background: #00ffff;
-  color: #000000;
+  background: transparent;
+  color: #00ffff;
+  border-color: #00ffff;
+  transform: translateY(-1px);
 }
 
 /* Cards */
 .card {
-  background: #111111;
-  border: 1px solid #333333;
-  border-radius: 12px;
-  padding: 2rem;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
   transition: all 0.3s ease;
 }
 
 .card:hover {
   border-color: #00ffff;
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.1);
 }
 
 /* Grid Layouts */
@@ -220,7 +233,7 @@ body {
 
 /* Border */
 .border { border: 1px solid #333333; }
-.border-cyan { border-color: #00ffff; }
+.border-cyan { border-color: #00ffff !important; }
 .rounded { border-radius: 8px; }
 .rounded-lg { border-radius: 12px; }
 .rounded-full { border-radius: 9999px; }
@@ -293,7 +306,16 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00e6e6;
+  background: #00cccc;
+}
+
+/* Tech Cards */
+.tech-card {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .tech-card:hover {
@@ -331,12 +353,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #00f5ff, #ff6b6b);
+  background: #00ffff;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #00d4dd, #ff5252);
+  background: #00cccc;
 }
 
 html {
@@ -385,43 +407,7 @@ html {
   margin: 0 auto;
 }
 
-/* Button styles */
-.btn-primary {
-  background: linear-gradient(135deg, #00f5ff, #ff6b6b);
-  border: none;
-  padding: 12px 32px;
-  border-radius: 50px;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 245, 255, 0.4);
-}
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid #00f5ff;
-  padding: 12px 32px;
-  border-radius: 50px;
-  color: #00f5ff;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
-}
-
-.btn-outline:hover {
-  background: #00f5ff;
-  color: #0a0a0a;
-  transform: translateY(-2px);
-}
+/* End of main styles */
 
 /* Navbar */
 .navbar {
@@ -685,27 +671,27 @@ html {
 }
 
 .border-cyan-400\/20 {
-  border-color: rgba(34, 211, 238, 0.2);
+  border-color: rgba(0, 255, 255, 0.2);
 }
 
 .border-cyan-400\/30 {
-  border-color: rgba(34, 211, 238, 0.3);
+  border-color: rgba(0, 255, 255, 0.3);
 }
 
 .border-cyan-400\/40 {
-  border-color: rgba(34, 211, 238, 0.4);
+  border-color: rgba(0, 255, 255, 0.4);
 }
 
 .text-cyan-300 {
-  color: #67e8f9;
+  color: #00ffff;
 }
 
 .text-cyan-400 {
-  color: #22d3ee;
+  color: #00ffff;
 }
 
 .text-yellow-400 {
-  color: #facc15;
+  color: #00ffff;
 }
 
 .text-white {
@@ -717,7 +703,7 @@ html {
 }
 
 .hover\:text-cyan-400:hover {
-  color: #22d3ee;
+  color: #00ffff;
 }
 
 .hover\:text-white:hover {
@@ -725,7 +711,7 @@ html {
 }
 
 .hover\:border-cyan-400\/40:hover {
-  border-color: rgba(34, 211, 238, 0.4);
+  border-color: rgba(0, 255, 255, 0.4);
 }
 
 .hover\:scale-\[1\.02\]:hover {

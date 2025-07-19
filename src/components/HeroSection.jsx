@@ -19,17 +19,17 @@ const HeroSection = () => {
               </h2>
               <p className="text-lg text-gray max-w-lg">
                 I create digital experiences that bridge the gap between design and technology. 
-                Passionate about building scalable applications and solving complex problems.
+                Passionate about building scalable applications.
               </p>
             </div>
             
-            <div className="flex gap-4 flex-wrap">
+            <div className="flex gap-4 flex-wrap items-center">
               <a href="#contact" className="btn btn-primary">
                 Get In Touch
               </a>
               <a href="/resume.html" className="btn btn-outline">
-                <Download size={20} />
-                Download Resume
+                <Download size={18} />
+                Resume
               </a>
             </div>
             

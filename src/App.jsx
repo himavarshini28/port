@@ -1,10 +1,8 @@
 
-
 import React from 'react';
 import {
   Navbar,
   HeroSection,
-  AboutSection,
   ExperienceSection,
   ProjectsSection,
   SkillsSection,
@@ -18,7 +16,6 @@ function App() {
     <div className="App">
       <Navbar />
       <HeroSection />
-      <AboutSection />
       <ExperienceSection />
       <ProjectsSection />
       <SkillsSection />
