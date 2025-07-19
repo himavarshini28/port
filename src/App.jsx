@@ -8,7 +8,8 @@ import {
   SkillsSection,
   AchievementsSection,
   CodingProfilesSection,
-  ContactSection
+  ContactSection,
+  Footer
 } from './components';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <AchievementsSection />
       <CodingProfilesSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 }

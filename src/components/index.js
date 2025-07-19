@@ -6,3 +6,5 @@ export { default as SkillsSection } from './SkillsSection';
 export { default as AchievementsSection } from './AchievementsSection';
 export { default as CodingProfilesSection } from './CodingProfilesSection';
 export { default as ContactSection } from './ContactSection';
+export { default as AnimatedImage } from './AnimatedImage';
+export { default as Footer } from './Footer';

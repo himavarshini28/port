@@ -1,5 +1,8 @@
 import React from 'react';
 import { Github, Code, Star, Trophy, ExternalLink } from 'lucide-react';
+import leetcodeLogo from '../assets/logos/leetcode.png';
+import codechefLogo from '../assets/logos/codechef.png';
+import geeksforgeeksLogo from '../assets/logos/image.png';
 
 const CodingProfilesSection = () => {
   const profiles = [
@@ -15,21 +18,21 @@ const CodingProfilesSection = () => {
       username: "yourusername",
       stats: "1500+ Problems Solved",
       link: "https://leetcode.com/yourusername",
-      icon: <Code size={32} />
+      icon: <img src={leetcodeLogo} alt="LeetCode" width="32" height="32" className="object-contain" />
     },
     {
-      platform: "CodeForces",
+      platform: "CodeChef",
       username: "yourusername",
-      stats: "Expert Rating",
-      link: "https://codeforces.com/profile/yourusername",
-      icon: <Star size={32} />
+      stats: "4 Star Rating",
+      link: "https://codechef.com/users/yourusername",
+      icon: <img src={codechefLogo} alt="CodeChef" width="32" height="32" className="object-contain" />
     },
     {
-      platform: "HackerRank",
+      platform: "GeeksforGeeks",
       username: "yourusername",
-      stats: "5 Star Rating",
-      link: "https://hackerrank.com/yourusername",
-      icon: <Trophy size={32} />
+      stats: "500+ Problems Solved",
+      link: "https://auth.geeksforgeeks.org/user/yourusername",
+      icon: <img src={geeksforgeeksLogo} alt="GeeksforGeeks" width="32" height="32" className="object-contain" />
     }
   ];
 
@@ -40,7 +43,7 @@ const CodingProfilesSection = () => {
           Coding Profiles
         </h2>
         
-        <div className="grid-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {profiles.map((profile, index) => (
             <a
               key={index}

@@ -5,13 +5,13 @@ const ContactSection = () => {
   return (
     <section id="contact" className="section">
       <div className="container">
-        <h2 className="text-5xl font-bold text-center mb-16 gradient-text">
+        <h2 className="text-3xl font-bold text-center mb-8 gradient-text">
           Get In Touch
         </h2>
         
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-xl text-gray">
+          <div className="text-center mb-8">
+            <p className="text-base text-gray">
               I'm always open to discussing new opportunities, interesting projects, 
               and potential collaborations. Let's create something amazing together!
             </p>
@@ -22,9 +22,9 @@ const ContactSection = () => {
               href="mailto:your.email@domain.com"
               className="tech-card text-center block"
             >
-              <Mail size={48} className="mx-auto mb-4 text-white" />
-              <h3 className="text-xl font-semibold mb-2 text-white">Email</h3>
-              <p className="text-gray">your.email@domain.com</p>
+              <Mail size={36} className="mx-auto mb-3 text-white" />
+              <h3 className="text-lg font-semibold mb-1 text-white">Email</h3>
+              <p className="text-gray text-sm">your.email@domain.com</p>
             </a>
             
             <a
@@ -33,9 +33,9 @@ const ContactSection = () => {
               rel="noopener noreferrer"
               className="tech-card text-center block"
             >
-              <Linkedin size={48} className="mx-auto mb-4 text-white" />
-              <h3 className="text-xl font-semibold mb-2 text-white">LinkedIn</h3>
-              <p className="text-gray">Connect with me</p>
+              <Linkedin size={36} className="mx-auto mb-3 text-white" />
+              <h3 className="text-lg font-semibold mb-1 text-white">LinkedIn</h3>
+              <p className="text-gray text-sm">Connect with me</p>
             </a>
             
             <a
@@ -44,9 +44,9 @@ const ContactSection = () => {
               rel="noopener noreferrer"
               className="tech-card text-center block"
             >
-              <Github size={48} className="mx-auto mb-4 text-white" />
-              <h3 className="text-xl font-semibold mb-2 text-white">GitHub</h3>
-              <p className="text-gray">Check out my work</p>
+              <Github size={36} className="mx-auto mb-3 text-white" />
+              <h3 className="text-lg font-semibold mb-1 text-white">GitHub</h3>
+              <p className="text-gray text-sm">Check out my work</p>
             </a>
           </div>
         </div>

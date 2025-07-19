@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
-import Avatar from './Avatar';
+import AnimatedImage from './AnimatedImage';
 
 const HeroSection = () => {
   return (
@@ -10,12 +10,12 @@ const HeroSection = () => {
           {/* Left Side - Intro */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-6xl font-bold text-white mb-4">
-                Hi, I'm{' '}
-                <span className="gradient-text">Your Name</span>
+              <h1 className="text-6xl text-white mb-4">
+                <span className="text-4xl font-normal">Hi, I'm</span><br />
+                <span className="gradient-text font-bold">HimaVarshini M</span>
               </h1>
-              <h2 className="text-2xl text-gray font-medium">
-                Full Stack Developer
+              <h2 className="text-3xl text-gray font-medium">
+                Developer & Tech Enthusiast
               </h2>
               <p className="text-lg text-gray max-w-lg">
                 I create digital experiences that bridge the gap between design and technology. 
@@ -58,9 +58,12 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right Side - Avatar */}
+          {/* Right Side - Animated Image */}
           <div className="flex justify-center items-center">
-            <Avatar />
+            <AnimatedImage 
+              alt="Profile Picture" 
+              size={400}
+            />
           </div>
         </div>
       </div>

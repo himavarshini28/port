@@ -17,6 +17,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Scrollbar Styling - Option 1: Minimal dark theme */
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #333333 #000000;
+}
+
+/* Option 2: Completely hide scrollbar (uncomment if you prefer this) */
+/*
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+*/
+
 /* Typography */
 .gradient-text {
   color: #ffffff;
@@ -43,7 +80,11 @@ body {
 }
 
 .section {
-  padding: 8rem 0;
+  padding: 5rem 0;
+}
+
+.section-compact {
+  padding: 3rem 0;
 }
 
 /* Navbar */
@@ -88,20 +129,30 @@ body {
   width: 80%;
 }
 
+/* Active navigation link */
+.nav-link-active {
+  color: #ffffff !important;
+}
+
+.nav-link-active::after {
+  width: 80% !important;
+  background: #ffffff !important;
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1.75rem;
+  gap: 0.4rem;
+  padding: 0.625rem 1.25rem;
   font-weight: 500;
   text-decoration: none;
   border-radius: 6px;
   transition: all 0.3s ease;
   cursor: pointer;
   border: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   white-space: nowrap;
   vertical-align: middle;
   line-height: 1;
@@ -143,6 +194,19 @@ body {
 
 .card:hover {
   transform: translateY(-4px);
+  background: #111111;
+}
+
+.card-compact {
+  background: #0a0a0a;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.card-compact:hover {
+  transform: translateY(-2px);
   background: #111111;
 }
 
@@ -274,13 +338,15 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .container { padding: 0 1rem; }
-  .section { padding: 4rem 0; }
-  .text-6xl { font-size: 2.5rem; }
-  .text-5xl { font-size: 2rem; }
-  .text-4xl { font-size: 1.75rem; }
+  .section { padding: 3rem 0; }
+  .text-6xl { font-size: 2rem; }
+  .text-5xl { font-size: 1.75rem; }
+  .text-4xl { font-size: 1.5rem; }
+  .text-3xl { font-size: 1.25rem; }
+  .text-2xl { font-size: 1.125rem; }
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
-  .hero-animation { width: 300px; height: 300px; }
-  .code-circle { width: 150px; height: 150px; }
+  .hero-animation { width: 250px; height: 250px; }
+  .code-circle { width: 120px; height: 120px; }
 }
 
 /* Mobile Navigation */
@@ -359,6 +425,30 @@ html {
 .timeline-item:hover::before {
   background: #cccccc;
   transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.timeline-item-compact {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.timeline-item-compact::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 0.5rem;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+.timeline-item-compact:hover::before {
+  background: #cccccc;
+  transform: scale(1.1);
   transition: all 0.3s ease;
 }
 
@@ -570,6 +660,42 @@ html {
 
 .bg-black\/80 {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bg-gray-600 {
+  background-color: #404040;
+}
+
+.bg-gray-800 {
+  background-color: #1a1a1a;
+}
+
+.border-white {
+  border-color: #ffffff;
+}
+
+.border-gray-500 {
+  border-color: #666666;
+}
+
+.bg-gray-700 {
+  background-color: #2a2a2a;
+}
+
+.text-gray-300 {
+  color: #cccccc;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hover\:scale-\[1\.02\]:hover {
+  transform: scale(1.02);
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-gradient-to-t {
