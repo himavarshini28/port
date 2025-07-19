@@ -3,22 +3,10 @@ import React from 'react';
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "Tech Company Inc.",
-      period: "2022 - Present",
-      description: "Led development of scalable web applications using React, Node.js, and cloud technologies. Managed a team of 5 developers and improved system performance by 40%."
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2020 - 2022",
-      description: "Developed responsive web applications and improved user experience across multiple platforms. Collaborated with design teams to implement pixel-perfect UIs."
-    },
-    {
-      title: "Junior Developer",
-      company: "StartUp Innovations",
-      period: "2019 - 2020",
-      description: "Built and maintained web applications, gained experience in full-stack development and agile methodologies."
+      title: "Web Developer Intern",
+      company: "Zeepty",
+      period: "April 2025 - July 2025",
+      description: "Developed the Supplier Page interface using Next.js framework with TypeScript for type safety. Implemented RESTful API endpoints for supplier data management and integrated third-party services. Deployed application components on AWS cloud platform with focus on performance optimization. Worked directly with product team to implement supplier registration workflow and data validation systems."
     }
   ];
 

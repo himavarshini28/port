@@ -6,13 +6,13 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with payment integration, inventory management, and real-time analytics. Built with modern technologies to ensure scalability and performance.",
-      longDescription: "This comprehensive e-commerce platform handles everything from product management to payment processing. Features include real-time inventory tracking, advanced analytics dashboard, user authentication, shopping cart functionality, and integrated payment systems. The platform is built to scale and handle high traffic loads efficiently.",
+      title: "RentIt",
+      description: "A rental marketplace platform connecting property owners with tenants, featuring property listings, booking system, and payment integration.",
+      longDescription: "RentIt is a comprehensive rental marketplace that streamlines the process of renting properties. The platform allows property owners to list their properties with detailed descriptions, photos, and pricing, while tenants can search, filter, and book properties seamlessly. Features include user authentication, property management, booking system, and secure payment processing.",
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
       github: "https://github.com",
       live: "https://demo.com",
-      features: ["Payment Integration", "Real-time Analytics", "Inventory Management", "User Authentication", "Admin Dashboard"]
+      features: ["Property Listings", "Search & Filter", "Booking System", "Payment Integration", "User Authentication"]
     },
     {
       title: "Task Management App",
