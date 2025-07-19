@@ -6,27 +6,28 @@ const SkillsSection = () => {
     {
       title: "Frontend",
       icon: <Code size={24} />,
-      skills: ["React", "Vue.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "SASS", "Tailwind CSS"]
+      skills: ["HTML5", "CSS3", "JavaScript", "React", "Next.js", "TypeScript"]
     },
     {
       title: "Backend",
       icon: <Terminal size={24} />,
-      skills: ["Node.js", "Python", "Java", "Express.js", "FastAPI", "Django", "RESTful APIs", "GraphQL"]
+      skills: ["Node.js", "Express.js", "RESTful APIs"]
     },
     {
       title: "Database",
       icon: <Database size={24} />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase", "Prisma", "Mongoose"]
-    },
-    {
-      title: "DevOps & Tools",
-      icon: <Zap size={24} />,
-      skills: ["AWS", "Docker", "Git", "GitHub Actions", "Jenkins", "Kubernetes", "Linux", "Nginx"]
+      skills: ["MongoDB", "Mongoose", "Firebase", "MySQL"]
     }
+    // DevOps & Tools section commented out for now
+    // {
+    //   title: "DevOps & Tools",
+    //   icon: <Zap size={24} />,
+    //   skills: ["Git", "GitHub", "VS Code", "Postman"]
+    // }
   ];
 
   return (
-    <section id="skills" className="section">
+    <section id="skills" className="section bg-gray-950">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-8 gradient-text">
           Technical Skills

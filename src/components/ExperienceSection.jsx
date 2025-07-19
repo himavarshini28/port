@@ -6,12 +6,12 @@ const ExperienceSection = () => {
       title: "Web Developer Intern",
       company: "Zeepty",
       period: "April 2025 - July 2025",
-      description: "Developed the Supplier Page interface using Next.js framework with TypeScript for type safety. Implemented RESTful API endpoints for supplier data management and integrated third-party services. Deployed application components on AWS cloud platform with focus on performance optimization. Worked directly with product team to implement supplier registration workflow and data validation systems."
+      description: "Developed comprehensive Supplier Page interface using Next.js and TypeScript. Designed RESTful API endpoints for supplier data management and CRUD operations. Integrated third-party services including payment gateways and authentication providers. Deployed scalable application components on AWS with performance optimization. Collaborated with cross-functional teams on supplier registration workflow and participated in agile development practices."
     }
   ];
 
   return (
-    <section id="experience" className="section-compact">
+    <section id="experience" className="section-compact bg-gray-950">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-8 gradient-text">
           Professional Experience

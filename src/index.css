@@ -80,11 +80,11 @@ html {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 5rem 0 !important;
 }
 
 .section-compact {
-  padding: 3rem 0;
+  padding: 4rem 0 !important;
 }
 
 /* Navbar */
@@ -338,7 +338,7 @@ html {
 /* Responsive Design */
 @media (max-width: 768px) {
   .container { padding: 0 1rem; }
-  .section { padding: 3rem 0; }
+  .section { padding: 4rem 0 !important; }
   .text-6xl { font-size: 2rem; }
   .text-5xl { font-size: 1.75rem; }
   .text-4xl { font-size: 1.5rem; }
@@ -524,11 +524,7 @@ html {
 }
 
 /* Section styling */
-.section {
-  min-height: 100vh;
-  padding: 80px 20px;
-  position: relative;
-}
+/* .section rule moved to top of file to avoid conflicts */
 
 .container {
   max-width: 1200px;
@@ -668,6 +664,14 @@ html {
 
 .bg-gray-800 {
   background-color: #1a1a1a;
+}
+
+.bg-gray-900 {
+  background-color: #111111;
+}
+
+.bg-gray-950 {
+  background-color: #050505;
 }
 
 .border-white {

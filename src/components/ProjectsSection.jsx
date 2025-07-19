@@ -7,30 +7,30 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "RentIt",
-      description: "A rental marketplace platform connecting property owners with tenants, featuring property listings, booking system, and payment integration.",
-      longDescription: "RentIt is a comprehensive rental marketplace that streamlines the process of renting properties. The platform allows property owners to list their properties with detailed descriptions, photos, and pricing, while tenants can search, filter, and book properties seamlessly. Features include user authentication, property management, booking system, and secure payment processing.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      features: ["Property Listings", "Search & Filter", "Booking System", "Payment Integration", "User Authentication"]
+      description: "A rental marketplace platform connecting property owners with tenants through an intuitive interface with property listings and booking system.",
+      longDescription: "RentIt is a full-stack rental marketplace that transforms the property rental experience. Property owners can create detailed listings with photos and descriptions, while tenants can search, filter, and book properties easily. The platform features user authentication, property management tools, booking system, and real-time communication between users.",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      github: "https://github.com/himavarshini28/RentIt",
+      live: "https://rent-it-dusky.vercel.app/",
+      features: ["Property Listings", "Search & Filter", "Booking System", "User Authentication"]
     },
     {
-      title: "Task Management App",
-      description: "A collaborative project management tool with real-time updates, team collaboration features, and progress tracking.",
-      longDescription: "A comprehensive project management solution designed for teams. Includes task assignment, progress tracking, real-time notifications, file sharing, and team collaboration features. Built with modern technologies to ensure smooth real-time communication and data synchronization.",
-      technologies: ["Vue.js", "Express", "PostgreSQL", "Socket.io", "Docker"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      features: ["Real-time Collaboration", "Task Assignment", "Progress Tracking", "File Sharing", "Team Chat"]
+      title: "WD-Compiler",
+      description: "An online code compiler for HTML, CSS, and JavaScript where developers can write code and see live output instantly, with code sharing capabilities.",
+      longDescription: "WD-Compiler is a web-based development environment that allows developers to write HTML, CSS, and JavaScript code with real-time preview. Users can see their code output instantly on the right side of the screen, making it perfect for quick prototyping and learning. The platform includes features for sharing code snippets with friends and collaborating on web development projects.",
+      technologies: ["React", "Node.js", "Express", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/himavarshini28/WD-compiler",
+      live: "https://wd-compiler-9hr6.vercel.app/",
+      features: ["Live Code Preview", "HTML/CSS/JS Editor", "Code Sharing", "Real-time Output", "Responsive Design"]
     },
     {
-      title: "AI-Powered Analytics Dashboard",
-      description: "Advanced analytics platform with machine learning insights, data visualization, and predictive modeling.",
-      longDescription: "An intelligent analytics platform that combines traditional data analysis with machine learning capabilities. Features interactive dashboards, predictive analytics, data visualization, and automated reporting. The system can process large datasets and provide actionable insights for business decision-making.",
-      technologies: ["Python", "React", "TensorFlow", "D3.js", "FastAPI"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      features: ["Machine Learning", "Data Visualization", "Predictive Analytics", "Real-time Processing", "Automated Reports"]
+      title: "TODO CLI",
+      description: "A command-line interface application for managing todos directly from the terminal, designed as a fun developer tool for task management.",
+      longDescription: "TODO CLI is a lightweight command-line application that allows developers to manage their tasks efficiently from the terminal. Built for developers who prefer working in the command line, this tool provides a simple and fast way to add, view, update, and delete todos without leaving the terminal environment. Perfect for quick task management during development sessions.",
+      technologies: ["Node.js", "JSON"],
+      github: "https://github.com/himavarshini28/todo-cli",
+      live: "",
+      features: ["Command Line Interface", "Add/Delete Todos", "View Todo List", "JSON Data Storage", "Terminal Based"]
     }
   ];
 
@@ -75,8 +75,8 @@ const ProjectsSection = () => {
                 <h4 className="text-white text-base font-semibold mb-2">Key Features</h4>
                 <ul className="space-y-1">
                   {projects[selectedProject].features.map((feature, index) => (
-                    <li key={index} className="flex items-center text-gray text-sm">
-                      <div className="w-1.5 h-1.5 bg-white rounded-full mr-2"></div>
+                    <li key={index} className="flex items-center text-gray text-sm gap-2">
+                      <div className="w-1.5 h-1.5 bg-white rounded-full mr-4"></div>
                       {feature}
                     </li>
                   ))}
@@ -98,13 +98,15 @@ const ProjectsSection = () => {
                   <Github size={18} />
                   View Code
                 </a>
-                <a
-                  href={projects[selectedProject].live}
-                  className="btn btn-primary flex items-center gap-2"
-                >
-                  <ExternalLink size={18} />
-                  Live Demo
-                </a>
+                {projects[selectedProject].live && (
+                  <a
+                    href={projects[selectedProject].live}
+                    className="btn btn-primary flex items-center gap-2"
+                  >
+                    <ExternalLink size={18} />
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>

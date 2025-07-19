@@ -27,29 +27,32 @@ const HeroSection = () => {
               <a href="#contact" className="btn btn-primary">
                 Get In Touch
               </a>
-              <a href="/resume.html" className="btn btn-outline">
+              {/* Resume button - to be updated with new file */}
+              {/* 
+              <a href="/resume.pdf" className="btn btn-outline">
                 <Download size={18} />
                 Resume
               </a>
+              */}
             </div>
             
             <div className="flex gap-6 mt-8">
               <a 
-                href="https://github.com" 
+                href="https://github.com/himavarshini28" 
                 className="text-gray hover:text-white transition-colors"
                 aria-label="GitHub"
               >
                 <Github size={24} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/himavarshini-mahapatruni/" 
                 className="text-gray hover:text-white transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={24} />
               </a>
               <a 
-                href="mailto:your.email@domain.com" 
+                href="mailto:himavarshini28245@gmail.com" 
                 className="text-gray hover:text-white transition-colors"
                 aria-label="Email"
               >

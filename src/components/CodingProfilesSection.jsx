@@ -8,38 +8,38 @@ const CodingProfilesSection = () => {
   const profiles = [
     {
       platform: "GitHub",
-      username: "yourusername",
-      stats: "500+ Repositories",
-      link: "https://github.com/yourusername",
+      username: "himavarshini28",
+      stats: "Active Open Source Contributor",
+      link: "https://github.com/himavarshini28",
       icon: <Github size={32} />
     },
     {
       platform: "LeetCode",
-      username: "yourusername",
-      stats: "1500+ Problems Solved",
-      link: "https://leetcode.com/yourusername",
+      username: "hivar_5",
+      stats: "300+ problems",
+      link: "https://leetcode.com/u/hivar_5/",
       icon: <img src={leetcodeLogo} alt="LeetCode" width="32" height="32" className="object-contain" />
     },
     {
       platform: "CodeChef",
-      username: "yourusername",
-      stats: "4 Star Rating",
-      link: "https://codechef.com/users/yourusername",
+      username: "hivarcodes",
+      stats: "rating 1543",
+      link: "https://www.codechef.com/users/hivarcodes",
       icon: <img src={codechefLogo} alt="CodeChef" width="32" height="32" className="object-contain" />
     },
     {
       platform: "GeeksforGeeks",
-      username: "yourusername",
-      stats: "500+ Problems Solved",
-      link: "https://auth.geeksforgeeks.org/user/yourusername",
+      username: "himavarshini_28",
+      stats: "100+ Problems Solved",
+      link: "https://www.geeksforgeeks.org/user/himavarshini_28/",
       icon: <img src={geeksforgeeksLogo} alt="GeeksforGeeks" width="32" height="32" className="object-contain" />
     }
   ];
 
   return (
-    <section id="profiles" className="section">
+    <section id="profiles" className="section bg-gray-950">
       <div className="container">
-        <h2 className="text-5xl font-bold text-center mb-16 gradient-text">
+        <h2 className="text-3xl font-bold text-center mb-8 gradient-text">
           Coding Profiles
         </h2>
         
