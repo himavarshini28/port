@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 // --- Style-derived Constants ---
+// Container
+const CONTAINER_WIDTH = 180;
 // Head
 const HEAD_WIDTH = 100;
 const HEAD_HEIGHT = 100;
@@ -58,7 +60,7 @@ const Avatar = () => {
       setAvatarTiltTransform(`perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`);
 
       // --- Pupil Movement Calculation ---
-      const headActualLeftInContainer = (styles.container.width - HEAD_WIDTH) / 2;
+      const headActualLeftInContainer = (CONTAINER_WIDTH - HEAD_WIDTH) / 2;
       const headViewportX = avatarRect.left + headActualLeftInContainer;
       const headViewportY = avatarRect.top + HEAD_TOP_OFFSET;
 
@@ -91,7 +93,7 @@ const Avatar = () => {
 
   const styles = {
     container: {
-      width: 180,
+      width: CONTAINER_WIDTH,
       height: 220,
       position: 'relative',
       transform: avatarTiltTransform,
@@ -177,7 +179,7 @@ const Avatar = () => {
     pupil: {
       width: PUPIL_WIDTH,
       height: PUPIL_HEIGHT,
-      backgroundColor: '#00f5ff', // Primary Cyan
+      backgroundColor: '#000000', // Black
       borderRadius: '50%',
       position: 'absolute',
       top: '50%',

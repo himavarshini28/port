@@ -36,21 +36,21 @@ const HeroSection = () => {
             <div className="flex gap-6 mt-8">
               <a 
                 href="https://github.com" 
-                className="text-gray hover:text-cyan transition-colors"
+                className="text-gray hover:text-white transition-colors"
                 aria-label="GitHub"
               >
                 <Github size={24} />
               </a>
               <a 
                 href="https://linkedin.com" 
-                className="text-gray hover:text-cyan transition-colors"
+                className="text-gray hover:text-white transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={24} />
               </a>
               <a 
                 href="mailto:your.email@domain.com" 
-                className="text-gray hover:text-cyan transition-colors"
+                className="text-gray hover:text-white transition-colors"
                 aria-label="Email"
               >
                 <Mail size={24} />

@@ -36,7 +36,7 @@ const SkillsSection = () => {
           {skillCategories.map((category, index) => (
             <div key={index} className="tech-card">
               <div className="flex items-center gap-4 mb-6">
-                <div className="text-cyan">{category.icon}</div>
+                <div className="text-white">{category.icon}</div>
                 <h3 className="text-2xl font-semibold text-white">{category.title}</h3>
               </div>
               
@@ -44,7 +44,7 @@ const SkillsSection = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="p-3 bg-black border border-cyan/20 rounded-lg text-center text-gray hover:text-white hover:border-cyan transition-all duration-300"
+                    className="p-3 bg-black border border-gray-400/20 rounded-lg text-center text-gray hover:text-white hover:border-white transition-all duration-300"
                   >
                     {skill}
                   </div>
