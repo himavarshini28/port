@@ -6,6 +6,24 @@ const ProjectsSection = () => {
 
   const projects = [
     {
+      title: "TrueWord",
+      description: "A professional testimonial collection platform that centralizes endorsements into elegant, branded public profiles.",
+      longDescription: `TrueWord addresses the problem of professionals and freelancers struggling to collect, manage, and showcase credible testimonials. 
+      Testimonials are often scattered across LinkedIn, emails, or hard to display attractively on websites. TrueWord provides a 
+      centralized, modern solution with personalized request links, branded public profiles, and an approval system — 
+      helping professionals build a portfolio of public praise effortlessly.`,
+      technologies: ["React.js", "Node.js", "Express", "MongoDB", "Tailwind CSS","Zustand","Zod"],
+      github: "https://github.com/himavarshini28/TrueWord",
+      live: "https://trueword-e4vi.vercel.app/",
+      features: [
+        "Easy Collection of Testimonials",
+  "Branded Public Profiles",
+  "Approval & Management Dashboard",
+  "Website Embed & Widgets",
+  "Professional, Clean Design ",
+]
+    },
+    {
       title: "RentIt",
       description: "A rental marketplace platform connecting property owners with tenants through an intuitive interface with property listings and booking system.",
       longDescription: "RentIt is a full-stack rental marketplace that transforms the property rental experience. Property owners can create detailed listings with photos and descriptions, while tenants can search, filter, and book properties easily. The platform features user authentication, property management tools, booking system, and real-time communication between users.",
