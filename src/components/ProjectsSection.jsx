@@ -5,6 +5,39 @@ const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(0);
 
   const projects = [
+    
+    
+    {
+  title: "DigiBrain",
+  description: "An intelligent knowledge management system with AI-powered semantic search and Chrome extension for one-click content capture.",
+  longDescription: `DigiBrain solves the problem of scattered bookmarks and lost content. Interesting articles, videos, and tweets 
+end up buried in browser bookmarks or forgotten in playlists. DigiBrain provides a centralized second brain with one-click Chrome 
+extension capture, smart tags, and AI-powered semantic search. Find content by describing what you remember, not exact keywords. 
+Share your digital brain via public links. Transform digital chaos into an organized, searchable knowledge base.`,
+  technologies: [
+    "TypeScript",
+    "React.js",
+    "Vite",
+    "Node.js",
+    "Express",
+    "MongoDB Vector Search",
+    "Google Gemini AI",
+    "Chrome Extension API",
+    "Zustand",
+    "Tailwind CSS"
+  ],
+  github: "https://github.com/himavarshini28/mindvault",
+  live: "https://digibrain.onrender.com/",
+  features: [
+    "One-Click Content Capture via Chrome Extension",
+    "AI-Powered Semantic Search (Find by Meaning, Not Keywords)",
+    "Unified Storage for Articles, Videos, Tweets & Links",
+    "Automatic Content Extraction & Smart Indexing",
+    "Tag-Based Organization System",
+    "Shareable Public Collections",
+    "Natural Language Search Queries"
+  ]
+},
     {
       title: "TrueWord",
       description: "A professional testimonial collection platform that centralizes endorsements into elegant, branded public profiles.",
@@ -41,15 +74,7 @@ const ProjectsSection = () => {
       live: "https://wd-compiler-9hr6.vercel.app/",
       features: ["Live Code Preview", "HTML/CSS/JS Editor", "Code Sharing", "Real-time Output", "Responsive Design"]
     },
-    {
-      title: "TODO CLI",
-      description: "A command-line interface application for managing todos directly from the terminal, designed as a fun developer tool for task management.",
-      longDescription: "TODO CLI is a lightweight command-line application that allows developers to manage their tasks efficiently from the terminal. Built for developers who prefer working in the command line, this tool provides a simple and fast way to add, view, update, and delete todos without leaving the terminal environment. Perfect for quick task management during development sessions.",
-      technologies: ["Node.js", "JSON"],
-      github: "https://github.com/himavarshini28/todo-cli",
-      live: "",
-      features: ["Command Line Interface", "Add/Delete Todos", "View Todo List", "JSON Data Storage", "Terminal Based"]
-    }
+    
   ];
 
   return (

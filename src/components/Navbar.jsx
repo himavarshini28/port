@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,10 +43,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="container flex justify-between items-center">
-        <div className="text-2xl font-bold gradient-text ml-4">
-          <span className="font-mono">|HV</span>
+    <nav className="navbar py-0 my-0">
+      <div className="container flex justify-between items-center py-0 my-0">
+        <div className="text-2xl font-bold gradient-text ml-4 my-0 py-0">
+          <span className="font-mono">
+            <img src={logo} alt="Logo" className="h-16 w-auto"/>
+          </span>
         </div>
         
         {/* Desktop Menu */}

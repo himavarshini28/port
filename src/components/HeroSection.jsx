@@ -1,10 +1,8 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import AnimatedImage from './AnimatedImage';
-import { getResumeUrls } from '../config/resumeConfig';
 
 const HeroSection = () => {
-  const { viewUrl } = getResumeUrls();
   
   return (
     <section id="home" className="section">
@@ -31,15 +29,7 @@ const HeroSection = () => {
                 Get In Touch
               </a>
               {/* Resume button */}
-              <a 
-                href={viewUrl} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn btn-outline flex items-center gap-2"
-              >
-                <Download size={18} />
-                Resume
-              </a>
+            
             </div>
             
             <div className="flex gap-6 mt-8">
